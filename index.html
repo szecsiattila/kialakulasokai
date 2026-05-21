@@ -25,6 +25,7 @@ height:100vh;
 background:
 linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
 url("images/europe-map.jpg");
+
 background-size:cover;
 background-position:center;
 display:flex;
@@ -112,13 +113,11 @@ margin-bottom:15px;
 }
 
 .highlight{
-
 background:linear-gradient(135deg,#b30000,#ff4d4d);
 color:white;
 padding:40px;
 border-radius:20px;
 box-shadow:0 5px 20px rgba(0,0,0,0.3);
-
 }
 
 .highlight h2{
@@ -137,6 +136,44 @@ padding:15px;
 border-radius:10px;
 }
 
+.quiz-box{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.quiz-box label{
+display:block;
+padding:10px;
+margin:5px;
+border-radius:10px;
+cursor:pointer;
+}
+
+.correct{
+background:#b6ffb6;
+}
+
+.wrong{
+background:#ffb8b8;
+}
+
+button{
+padding:15px 30px;
+background:#172b4d;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;
+cursor:pointer;
+}
+
+button:hover{
+background:#274a88;
+}
+
 footer{
 background:#172b4d;
 color:white;
@@ -147,6 +184,7 @@ padding:30px;
 </style>
 
 </head>
+
 <body>
 
 <header>
@@ -156,8 +194,8 @@ padding:30px;
 <h1>Az I. világháború kialakulásának okai</h1>
 
 <p>
-1914-ben Európa egy hatalmas puskaporos hordóvá vált. 
-Egy merénylet csak a szikra volt. A valódi okok évtizedek alatt alakultak ki.
+1914-ben Európa egy puskaporos hordóvá vált.
+A szarajevói merénylet csak a szikra volt.
 </p>
 
 </div>
@@ -171,6 +209,7 @@ Egy merénylet csak a szikra volt. A valódi okok évtizedek alatt alakultak ki.
 <li><a href="#okok">Fő okok</a></li>
 <li><a href="#magyarorszag">Magyarország</a></li>
 <li><a href="#esemenyek">Idővonal</a></li>
+<li><a href="#kviz">Kvíz</a></li>
 
 </ul>
 
@@ -184,69 +223,48 @@ Egy merénylet csak a szikra volt. A valódi okok évtizedek alatt alakultak ki.
 
 <div class="card">
 
-<img src="IVHAUHU.jpg">
+<img src="images/alliance.jpg">
 
 <h3>Szövetségi rendszerek</h3>
 
 <p>
-
-Európa két nagy táborra szakadt:
-
-<ul>
-<li>Hármas Szövetség</li>
-<li>Antant</li>
-</ul>
-
-Egy kisebb konfliktus így könnyen egész Európát érintő háborúvá válhatott.
-
+Antant és Hármas Szövetség.
 </p>
 
 </div>
 
 <div class="card">
 
-<img src="Yr9_FirstWorldWar_4.jpg">
+<img src="images/europe-map.jpg">
 
 <h3>Gyarmati verseny</h3>
 
 <p>
-
-A nagyhatalmak versenyeztek a világ területeiért és erőforrásaiért.
-
-Németország gyors fejlődése egyre több konfliktust okozott.
-
+A nagyhatalmak versenyeztek a gyarmatokért.
 </p>
 
 </div>
 
 <div class="card">
 
-<img src="alliance.jpg">
+<img src="images/sarajevo.jpg">
 
 <h3>Nacionalizmus</h3>
 
 <p>
-
-Sok nép saját államot akart.
-
-A Balkán különösen feszült terület volt, ahol a különböző népek és országok érdekei ütköztek.
-
+A Balkán különösen feszült terület volt.
 </p>
 
 </div>
 
 <div class="card">
 
-<img src="loveszarok.jpg">
+<img src="images/sarajevo.jpg">
 
-<h3>A szarajevói merénylet</h3>
+<h3>Szarajevói merénylet</h3>
 
 <p>
-
-1914. június 28-án meggyilkolták Ferenc Ferdinánd trónörököst.
-
-Ez lett a közvetlen kiváltó esemény.
-
+1914. június 28.
 </p>
 
 </div>
@@ -259,32 +277,10 @@ Ez lett a közvetlen kiváltó esemény.
 
 <div class="highlight">
 
-<h2>Magyarország szerepe külön kiemelve</h2>
+<h2>Magyarország szerepe</h2>
 
 <p>
-
-Magyarország ekkor az Osztrák-Magyar Monarchia része volt.
-
-</p>
-
-<br>
-
-<p>
-
-A Monarchián belül jelentős politikai és gazdasági szereppel rendelkezett.
-
-A szarajevói merénylet után a Monarchia hadat üzent Szerbiának, ami elindította a láncreakciót.
-
-</p>
-
-<br>
-
-<p>
-
-Magyar katonák százezrei vettek részt a háborúban.
-
-A háború vége Magyarország számára súlyos következményekkel járt.
-
+Magyarország az Osztrák-Magyar Monarchia része volt.
 </p>
 
 <br>
@@ -298,34 +294,42 @@ style="width:100%;border-radius:15px;">
 
 <section id="esemenyek">
 
-<h2>Az események idővonala</h2>
+<h2>Idővonal</h2>
 
 <div class="timeline">
 
 <div class="event">
-<h3>1879</h3>
-<p>Megalakul a kettős szövetség.</p>
-</div>
-
-<div class="event">
 <h3>1882</h3>
-<p>Létrejön a Hármas Szövetség.</p>
+<p>Hármas Szövetség</p>
 </div>
 
 <div class="event">
 <h3>1907</h3>
-<p>Kialakul az Antant.</p>
+<p>Antant</p>
 </div>
 
 <div class="event">
-<h3>1914. június 28.</h3>
-<p>Szarajevói merénylet.</p>
+<h3>1914</h3>
+<p>Szarajevói merénylet</p>
 </div>
 
-<div class="event">
-<h3>1914. július 28.</h3>
-<p>Kitör az I. világháború.</p>
 </div>
+
+</section>
+
+<section id="kviz">
+
+<h2>15 kérdéses kvíz</h2>
+
+<div id="quizContainer"></div>
+
+<div style="text-align:center">
+
+<button id="checkBtn">
+Kvíz ellenőrzése
+</button>
+
+<h2 id="score"></h2>
 
 </div>
 
@@ -333,11 +337,260 @@ style="width:100%;border-radius:15px;">
 
 <footer>
 
-<p>
-I. világháború projekt • Készítette: [Neved]
-</p>
+I. világháború projekt • Szécsi
 
 </footer>
+
+<script>
+  const questions=[
+
+{
+q:"Mikor tört ki az I. világháború?",
+answers:["1914","1918","1939","1905"],
+correct:0
+},
+
+{
+q:"Hol történt a merénylet?",
+answers:["Budapest","Berlin","Szarajevó","Bécs"],
+correct:2
+},
+
+{
+q:"Kit gyilkoltak meg Szarajevóban?",
+answers:["II. Vilmos","Ferenc Ferdinánd","Lenin","Napóleon"],
+correct:1
+},
+
+{
+q:"Melyik állam része volt Magyarország?",
+answers:[
+"Osztrák-Magyar Monarchia",
+"Német Birodalom",
+"Oroszország",
+"Szerbia"],
+correct:0
+},
+
+{
+q:"Mi volt a közvetlen kiváltó ok?",
+answers:[
+"Szarajevói merénylet",
+"Ipari forradalom",
+"Gazdasági válság",
+"Francia forradalom"],
+correct:0
+},
+
+{
+q:"Melyik térség volt különösen feszült?",
+answers:[
+"Balkán",
+"Izland",
+"Kanada",
+"Skócia"],
+correct:0
+},
+
+{
+q:"Melyik szövetség létezett?",
+answers:[
+"Hármas Szövetség",
+"NATO",
+"ENSZ",
+"EU"],
+correct:0
+},
+
+{
+q:"Melyik másik nagy tömb létezett?",
+answers:[
+"Antant",
+"Arab Liga",
+"V4",
+"Varsói Szerződés"],
+correct:0
+},
+
+{
+q:"Mikor történt a merénylet?",
+answers:[
+"1914 június 28",
+"1915 január 1",
+"1917 július 5",
+"1912 február 12"],
+correct:0
+},
+
+{
+q:"Mi növelte a feszültséget?",
+answers:[
+"Gyarmati verseny",
+"Internet",
+"Sport",
+"Turizmus"],
+correct:0
+},
+
+{
+q:"Ki ellen indult hadüzenet?",
+answers:[
+"Szerbia",
+"Anglia",
+"USA",
+"Spanyolország"],
+correct:0
+},
+
+{
+q:"Melyik ország gyors fejlődése okozott feszültséget?",
+answers:[
+"Németország",
+"Belgium",
+"Norvégia",
+"Görögország"],
+correct:0
+},
+
+{
+q:"Mit akart sok nép?",
+answers:[
+"Saját államot",
+"Űrutazást",
+"Telefont",
+"Vasutat"],
+correct:0
+},
+
+{
+q:"Mikor alakult ki az Antant?",
+answers:[
+"1907",
+"1914",
+"1899",
+"1880"],
+correct:0
+},
+
+{
+q:"Hány válaszlehetőség van kérdésenként?",
+answers:[
+"4",
+"2",
+"3",
+"6"],
+correct:0
+}
+
+];
+
+const container=document.getElementById("quizContainer");
+
+questions.forEach((item,index)=>{
+
+container.innerHTML+=`
+
+<div class="quiz-box">
+
+<h3>${index+1}. ${item.q}</h3>
+
+${item.answers.map((answer,i)=>`
+
+<label>
+
+<input
+type="radio"
+name="q${index}"
+value="${i}">
+
+${answer}
+
+</label>
+
+`).join("")}
+
+</div>
+
+`;
+
+});
+
+document.getElementById("checkBtn")
+.onclick=function(){
+
+let score=0;
+
+questions.forEach((item,index)=>{
+
+let selected=
+document.querySelector(
+`input[name=q${index}]:checked`
+);
+
+let labels=
+document.querySelectorAll(
+`input[name=q${index}]`
+);
+
+labels.forEach(label=>{
+
+label.parentElement.classList.remove(
+"correct",
+"wrong"
+);
+
+});
+
+if(selected){
+
+if(parseInt(selected.value)
+===item.correct){
+
+selected.parentElement
+.classList.add(
+"correct"
+);
+
+score++;
+
+}
+else{
+
+selected.parentElement
+.classList.add(
+"wrong"
+);
+
+let good=
+
+document.querySelector(
+
+`input[name=q${index}][value='${item.correct}']`
+
+);
+
+good.parentElement
+.classList.add(
+"correct"
+);
+
+}
+
+}
+
+});
+
+document.getElementById(
+"score"
+).innerHTML=
+
+"Eredmény: "
++score+
+"/15 pont";
+
+}
+
+</script>
 
 </body>
 </html>
